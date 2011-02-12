@@ -12,11 +12,6 @@
  * @subpackage  TwentyEleven
  * @version     0.1
  * @since       0.1
- *
- * 1) Preset a few things
- * 2) Make a theme object with Kitchen Sink HTML5 Base (we call it a kitchen)
- * 3) Load some appliances (features/plugins/classes) for your kitchen
- * 4) Create
 */
 
 // KST Base theme settings array
