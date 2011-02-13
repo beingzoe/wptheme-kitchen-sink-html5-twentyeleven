@@ -36,11 +36,11 @@ define('KST_SEO_TITLE_SEPARATOR_DEFAULT', '&laquo;');
 if ( class_exists('KST') ) {
 
     // REGISTER YOUR THEME WITH KITCHEN SINK HTML5 BASE
-    $my_theme = new KST_Kitchen_Theme($twenty_eleven_settings);
+    $my_theme = new KST_Kitchen_Theme($twenty_eleven_settings, 'and_the_kitchen_sink');
 
     // LOAD A PRESET CONFIGURATION - default, minimum, and_the_kitchen_sink
     // You may alternatively pass the preset value as a 2nd argument when invoking your kitchen above and delete this method call
-    $my_theme->loadPreset('and_the_kitchen_sink');
+    //$my_theme->loadPreset('and_the_kitchen_sink');
 
     /*
     // OR GO ALA CARTE - Not everybody likes presets so load what you want
