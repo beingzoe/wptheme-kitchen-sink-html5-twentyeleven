@@ -19,7 +19,7 @@
 $twenty_eleven_settings = array(
     /* REQUIRED */
     'friendly_name'             => 'Twenty Eleven',         // Friendly name used by all widgets, libraries, and classes; can be different than the registered theme name
-    'prefix'                    => 'kst_demo',               // Prefix for namespacing libraries, classes, widgets
+    'prefix'                    => 'kst_demo',              // Prefix for namespacing libraries, classes, widgets
     'developer'                 => 'zoe somebody',          // Friendly name of current developer; only used for admin display;
     'developer_url'             => 'http://beingzoe.com/',  // Full URI to developer website;
     /* REQUIRED for WP best practice */
@@ -39,15 +39,12 @@ if ( class_exists('KST') ) {
     $my_theme = new KST_Kitchen_Theme($twenty_eleven_settings, 'and_the_kitchen_sink');
 
     // LOAD A PRESET CONFIGURATION - default, minimum, and_the_kitchen_sink
-    // You may alternatively pass the preset value as a 2nd argument when invoking your kitchen above and delete this method call
-    //$my_theme->loadPreset('and_the_kitchen_sink');
-
-    /*
+    // You may alternatively pass the preset value as a 2nd argument when invoking your kitchen above and delete this method call (as we did above)
     // OR GO ALA CARTE - Not everybody likes presets so load what you want
-    // e.g. $my_theme->load('wp_sensible_defaults');
-    */
+    // Load preset example: $my_theme->loadPreset('and_the_kitchen_sink');
+    // Load preset example: $my_theme->load('wp_sensible_defaults');
 
-    // An array to create a theme options page - make one array per options page you need (u)
+    // An array to create a theme options page - make one array per options page you need
     $twentyeleven_options = array(
         'parent_slug'           => 'kst',
         'menu_title'            => 'Layout Settings',
@@ -150,18 +147,10 @@ if ( class_exists('KST') ) {
 */
 
 
-
-
-
-
-
-
-/* BELOW HERE will not be in the base as is
- * but there will be some placeholder sections for this stuff with some examples maybe?
- *
- * Some of the stuff below was just to run the TwentyEleven theme
- * and will not be included at all is duly noted
+/* BELOW HERE is specific to Twenty Eleven and has nothing to do with
+ * Kitchen Sink HTML5
 */
+
 
 /* ADD AND REMOVE JUNK -
  * See documentation (online or in plugin) for things that are added
@@ -194,9 +183,6 @@ function kst_after_child_theme() { // Fix/Undo/Check things that a child theme m
 
 
 } // END kst_theme_execute()
-
-
-
 
 
 
