@@ -104,6 +104,8 @@ if ( class_exists('KST') ) {
     $my_theme->wordpress->registerSidebar('Home Sidebar', 'Sidebar content for home page');
     $my_theme->wordpress->registerSidebars(3, 'Footer Area');
 
+    $my_theme->load('additional_image_sizes');
+
     // Jit Message Settings
     $jit_message_settings = array( //array(&$this, 'callbackInit')
                 'content_source'    => 'posts', // posts|or_valid_callback; use 'or_valid_callback' where you will use separate logic to determine message and the site/blog owner can't choose per post/page/custom
