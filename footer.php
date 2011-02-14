@@ -27,7 +27,7 @@
         <a href="<?php echo home_url(); ?>/" title="<?php bloginfo('name'); ?> Home" rel="home"><?php bloginfo('name'); ?></a>
     </div>
     <div id="ft_legal">
-        Copyright &copy; 2010, Somebody All Rights Reserved
+        <?php echo $GLOBALS["my_theme"]->options->get('copyright_notice'); ?>
     </div>
 </footer>
 

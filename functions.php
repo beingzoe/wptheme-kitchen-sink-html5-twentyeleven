@@ -52,30 +52,60 @@ if ( class_exists('KST') ) {
         'capability'            => 'manage_options',
         'view_page_callback'    => "auto",
         'options'               => array(
+                'misc_text_section' => array(
+                                "name"      => 'Misc text options',
+                                "desc"      => "<p><em>Edit various text in the main layout</em></p>",
+                                "type"      => "section",
+                                "is_shut"   => FALSE
+                                ),
+                'copyright_notice' => array(
+                                "name"      => 'Copyright notice',
+                                "desc"      => 'Appears at the bottom of every page.',
+                                "default"   => "Copyright © " . date('Y') . ", All Rights Reserved",
+                                "type"      => "text",
+                                "size"      => "150"
+                                ),
+                'misc_contact_section' => array(
+                                "name"      => 'Misc contact options',
+                                "desc"      => "<p><em>Various contact options for forms etc...</em></p>",
+                                "type"      => "section",
+                                "is_shut"   => FALSE
+                                ),
+                'main_contact_form_section' => array(
+                                "name"      => 'Primary site contact form',
+                                "desc"      => "<p><em>Settings for the main contact form.</em></p>",
+                                "type"      => "subsection",
+                                "is_shut"   => FALSE
+                                ),
+                'contact_primary_to_address' => array(
+                                "name"      => '"To" address',
+                                "desc"      => 'Email address to deliver mail from the main contact form',
+                                "default"   => "test@example.org",
+                                "type"      => "text",
+                                "size"      => "150"
+                                ),
                 'sample_section' => array(
                                 "name"      => 'Sample Options',
                                 "desc"      => "<p><em>Sample options for layout and presentation</em></p>",
                                 "type"      => "section",
                                 "is_shut"   => FALSE
                                 ),
-
                 'TEST_SELECT' => array(
-                        "name"    => __('PLUGIN Select'),
-                        "desc"    => __("There are many choices awaiting"),
-                        "default"     => "Select 2",
-                        "type"    => "select",
-                        'multi'     => TRUE,
-                        'size'      => 3,
-                        'form_attr' => 'style="height: auto;"',
-                        "options" => array(
-                                            "Select 1" => 10,
-                                            "Select 2" => 20,
-                                            "Select 3" => 30,
-                                            "Select 4" => 40,
-                                            "Select 5" => 50
-                                            )
-                        ),
-
+                                "name"    => __('PLUGIN Select'),
+                                "desc"    => __("There are many choices awaiting"),
+                                "default"     => "Select 2",
+                                "type"    => "select",
+                                'multi'     => TRUE,
+                                'size'      => 3,
+                                'form_attr' => 'style="height: auto;"',
+                                "options" => array(
+                                                    "Select 1" => 10,
+                                                    "Select 2" => 20,
+                                                    "Select 3" => 30,
+                                                    "Select 4" => 40,
+                                                    "Select 5" => 50
+                                                    )
+                                ),
                 'sample_wp_categories' => array(
                                 "name"      => 'Featured Category',
                                 "desc"      => 'This doesn\'t really do anything but demonstrates a select_wp_categories option block',
@@ -83,7 +113,6 @@ if ( class_exists('KST') ) {
                                 "type"      => "select_wp_categories",
                                 "args"      => array( )
                                 ),
-
                 'sample_checkbox' => array(
                                 "name"      => 'Turn something on',
                                 "desc"      => "Checked by default.",
