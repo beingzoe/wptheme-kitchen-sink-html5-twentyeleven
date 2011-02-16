@@ -59,7 +59,7 @@
                     'container_class'   => false,
                     'menu_id'           => 'hd_menu_list',
                     'sort_column'       => 'menu_order',
-                    'depth'             => '3',
+                    'depth'             => '4',
                     'fallback_cb'     => 'kstWpNavMenuFallbackCb'
                     ) );
         echo "</nav>";
