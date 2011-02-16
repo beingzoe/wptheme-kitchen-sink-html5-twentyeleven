@@ -1279,23 +1279,23 @@ Tags:           widgets, theme options, threaded comments, highlight author comm
      */
     /* Container .cyclables */
         .cyclable_default {
-            width: 639px;
+            width: 576px;
             margin: 18px auto 0 auto;
             background: #eee none 0 0 repeat;
             border: 1px solid #000;
         }
         /* Slides container */
         .cyclable_default .cycle_items {
-            height: 350px;
+            height: 411px;
         }
         /* Individual slides */
         .cyclable_default .cycle_item {
-            width: 639px; /* smoother scolling with explicit dimensions */
-            height: 350px;
+            width: 576px; /* smoother scolling with explicit dimensions */
+            height: 411px;
         }
         /* Optional header and footer */
         .cyclable_default .cycle_header, .cyclable_default .cycle_footer {
-            width: 619px;
+            width: 556px;
             padding: 10px;
             background: #000 none;
             color: #fff;
@@ -1356,64 +1356,25 @@ Tags:           widgets, theme options, threaded comments, highlight author comm
         .cyclables .cyclables_nav { /* functionality */ display: none; }
         .cyclables.with_nav .cyclables_nav { /* functionality */ display: block; }
 
-    /**
-     * Scrollables (slideshow) plugin
-     *
-     * Sample css: /assets/stylesheets/sample_scrollables.css
-     */
-        .pickle {
-            width: 639px;
-            /*height: 350px;*/
-            margin: 18px auto 0 auto;
-            background: #eee none 0 0 repeat;
-            border: 1px solid #000;
-        }
-        .pickle .scrollables_scrollable {
-            height: 350px;
-        }
-        .pickle .scrollables_header {
-            /* optional */
-            margin: 0 0 10px;
-            padding: 10px;
-            background: #000 none;
-            color: #fff;
-        }
-        .pickle .scrollables_footer {
-            /* optional */
-            margin: 10px 0 0 ;
-            padding: 10px;
-            background: #000 none;
-            color: #fff;
-        }
-        .pickle .scroll_item {
-            width: 639px;
-            height: 350px;
-            text-align: center;
-        }
-        .pickle .scroll_item .active { }
-
-        .pickle .scrollables_next, .pickle .scrollables_previous { color: #fff; }
-        .pickle .scrollables_next:hover, .pickle .scrollables_previous:hover { color: #ff4b33; }
-
         /**
          * scrollables scrollable_default instance (Tools.Scrollables)
          */
         .scrollable_default {
-            width: 639px;
-            height: 350px;
+            width: 576px;
+            height: 411px;
             margin: 18px auto 0 auto;
             background: #eee none 0 0 repeat;
             border: 1px solid #000;
         }
         .scrollable_default .scrollables_scrollable {
-            height: 350px;
+            height: 411px;
         }
         .scrollable_default .scrollables_header { /* optional */ }
         .scrollable_default .scrollables_footer {
             position: absolute;
             bottom: 0;
             left: 0;
-            width: 619px;
+            width: 556px;
             padding: 10px;
             background: #000 none;
             color: #fff;
@@ -1421,8 +1382,8 @@ Tags:           widgets, theme options, threaded comments, highlight author comm
             z-index: 0;
         }
         .scrollable_default .scroll_item {
-            width: 640px;
-            height: 350px;
+            width: 576px;
+            height: 411px;
             text-align: center;
         }
         .scrollable_default .scroll_item .active { }
