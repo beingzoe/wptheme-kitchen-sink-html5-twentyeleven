@@ -25,13 +25,6 @@ jQuery(document).ready(function($) { // noconflict wrapper to use shorthand $() 
                 autoplay: true,
                 interval: '4000'
             });
-        /*
-        $("div.scrollables.with_nav")
-            .navigator({
-                navi: '.scrollables_nav',
-                idPrefix: $(this).attr('id')
-            });
-            */
     };
 
     /*
