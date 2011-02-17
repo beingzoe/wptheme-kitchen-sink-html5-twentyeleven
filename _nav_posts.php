@@ -38,11 +38,11 @@ if ( $wp_query->max_num_pages > 1 ) {
                     $exclude = $previous_post->ID;
 
                 $featured_posts = get_posts("numberposts=5&exclude=$exclude");
-                foreach($featured_posts as $post) :
+                foreach($featured_posts as $post) {
                 setup_postdata($post);
                 ?>
                 <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-                <?php endforeach; ?>
+                <?php } ?>
             </ul>
         </ul>
     </nav>

@@ -45,14 +45,14 @@
                 $tmp_id = $id; /* save the original loop */
 
                 $featured_posts = get_posts("numberposts=5&exclude=$exclude");
-                foreach($featured_posts as $post) :
+                foreach($featured_posts as $post) {
                     setup_postdata($post);
             ?>
                     <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
             <?php
                     $post = $tmp_post; /* restore the original loop */
                     $id = $tmp_id; /* restore the original loop */
-                    endforeach;
+                    } // end loop;
             ?>
             </ul>
         </li>
