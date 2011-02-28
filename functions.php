@@ -15,6 +15,7 @@
 */
 include "_kst_bootstrap_theme.php"; // Protects theme from Kitchen Sink HTML5 not being installed and activated
 
+
 // KST Base theme settings array
 // Various Kitchen Sink HTML5 Base settings for your theme
 $twenty_eleven_settings = array(
@@ -28,6 +29,18 @@ $twenty_eleven_settings = array(
     'theme_excerpt_length'      => 100,                     // Default auto excerpt length
     /* OPTIONAL */
     'theme_seo_title_sep'       => '&laquo;',               // Separator between title bar title segments
+    'javascripts' => array(
+            'jquery',
+            'modernizr',
+            'dd_belatedpng',
+            'plugins',
+            'script',
+            'script_admin'
+        ),
+    'stylesheets' => array(
+            'style',
+            'style_admin'
+        )
 );
 
 
@@ -59,7 +72,7 @@ $twentyeleven_options = array(
                             "desc"      => 'Appears at the bottom of every page.',
                             "default"   => "Copyright © " . date('Y') . ", All Rights Reserved",
                             "type"      => "text",
-                            "size"      => "150"
+                            "size"      => "75"
                             ),
             'misc_contact_section' => array(
                             "name"      => 'Misc contact options',
@@ -78,7 +91,7 @@ $twentyeleven_options = array(
                             "desc"      => 'Email address to deliver mail from the main contact form',
                             "default"   => "test@example.org",
                             "type"      => "text",
-                            "size"      => "150"
+                            "size"      => "75"
                             ),
             'sample_section' => array(
                             "name"      => 'Sample Options',
@@ -129,7 +142,7 @@ $my_theme->wordpress->registerSidebar('Pages Sidebar', 'Sidebar content for page
 $my_theme->wordpress->registerSidebar('Home Sidebar', 'Sidebar content for home page');
 $my_theme->wordpress->registerSidebars(4, 'Footer Area');
 
-$my_theme->load('additional_image_sizes');
+//$my_theme->load('additional_image_sizes');
 
 // Jit Message Settings
 $jit_message_settings = array( //array(&$this, 'callbackInit')
